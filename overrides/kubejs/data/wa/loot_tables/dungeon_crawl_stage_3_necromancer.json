@@ -1,0 +1,180 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 6,
+        "max": 12
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:iv_machine_hull",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:luv_machine_hull",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:zpm_machine_hull",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:naquadah_ingot",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:naquadah_alloy_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:duranium_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tritanium_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:iridium_dust",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_dust",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:queens_slime_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_breath",
+          "weight": 2,
+          "quality": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:ethereal_flesh",
+          "weight": 1,
+          "quality": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:ghostly_pasta",
+          "weight": 2,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:grilled_ghast_tentacles",
+          "weight": 2,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:phantom_pasta",
+          "weight": 1,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:eton_mess",
+          "weight": 1,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:meringue",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:chocolate_milkshake",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:rum_raisin_ice_cream",
+          "weight": 1,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}

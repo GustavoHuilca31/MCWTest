@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 15,
+        "max": 20
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:mv_circuit_assembler",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_circuit_assembler",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:basic_integrated_circuit",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:cpu_wafer",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 1,
+                    "max": 3
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "xlfoodmod:nether_cake",
+            "weight": 5
+
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:scorched_anvil",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:hhuozhijinghua",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "mysticalagriculture:fiery_ingot_essence",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 3,
+                    "max": 7
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:modifier_crystal",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Modifier:\"tconstruct:fiery\"}"
+            }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:modifier_crystal",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Modifier:\"tconstruct:cooling\"}"
+            }
+            ]
+            }
+        ]
+        }
+    ]
+}

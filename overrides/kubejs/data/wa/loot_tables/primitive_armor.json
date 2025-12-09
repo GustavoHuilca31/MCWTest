@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": 1,
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:tool_binding",
+            "weight": 8,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:helmet_plating",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:iron#oxidized\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:chestplate_plating",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:iron#oxidized\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:leggings_plating",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:iron#oxidized\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:boots_plating",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:iron#oxidized\"}"
+                }
+            ]
+            }
+
+        ]
+        }
+    ]
+}

@@ -1,0 +1,1216 @@
+
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 15,
+        "max": 20
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\"  ],tic_modifiers:[{level:2,name:\"tconstruct:sweeping_edge\"},{level:4,name:\"tinkers_thinking:shady\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":4.83f,\"tconstruct:attack_speed\":1.6199999f,\"tconstruct:durability\":1388.625f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":1.3499999f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\",\"tinkers_thinking:shroomite\"  ],tic_modifiers:[{level:2,name:\"tconstruct:sweeping_edge\"},{level:4,name:\"tinkers_thinking:shady\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":4.83f,\"tconstruct:attack_speed\":1.6199999f,\"tconstruct:durability\":1388.625f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":1.3499999f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:beetron\",\"tinkers_thinking:beetron\",\"tinkers_thinking:beetron\",\"tinkers_thinking:beetron\"],tic_modifiers:[{level:2,name:\"tconstruct:sweeping_edge\"},{level:1,name:\"tconstruct:silky_aoe_shears\"},{level:4,name:\"tinkers_thinking:hungriness\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":4.84f,\"tconstruct:attack_speed\":1.53f,\"tconstruct:durability\":664.125f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":1.7875f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:ancient_ceramic\",\"tinkers_thinking:ancient_ceramic\",\"tinkers_thinking:ancient_ceramic\",\"tinkers_thinking:ancient_ceramic\"],tic_modifiers:[{level:4,name:\"tinkers_thinking:sculk_catalyse\"},{level:4,name:\"tinkers_thinking:sculk_siphon\"},{level:2,name:\"tconstruct:sweeping_edge\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.98f,\"tconstruct:attack_speed\":2.16f,\"tconstruct:durability\":715.875f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":2.4f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:invar\",\"tconstruct:invar\",\"tconstruct:invar\",\"tconstruct:invar\"],tic_modifiers:[{level:4,name:\"tconstruct:invariant\"},{level:2,name:\"tconstruct:sweeping_edge\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.06f,\"tconstruct:attack_speed\":1.8899999f,\"tconstruct:durability\":724.5f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":1.2375f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:chillslime_cryogel\",\"tinkers_thinking:chillslime_cryogel\",\"tinkers_thinking:chillslime_cryogel\",\"tinkers_thinking:chillslime_cryogel\"],tic_modifiers:[{level:4,name:\"tconstruct:overslime\"},{level:4,name:\"tinkers_thinking:overfreeze\"},{level:2,name:\"tconstruct:sweeping_edge\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.52f,\"tconstruct:attack_speed\":1.6199999f,\"tconstruct:durability\":764.75f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":0.95625f,\"tconstruct:overslime\":57.5f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:bear_interest\",\"sakuratinker:bear_interest\",\"sakuratinker:bear_interest\",\"sakuratinker:bear_interest\"],tic_modifiers:[{level:4,name:\"sakuratinker:rejuvenating\"},{level:2,name:\"tconstruct:sweeping_edge\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.04f,\"tconstruct:attack_speed\":2.07f,\"tconstruct:durability\":417.44998f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":1.2750001f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_katanas:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:blazing_bone\",\"tconstruct:blazing_bone\",\"tconstruct:blazing_bone\",\"tconstruct:blazing_bone\"],tic_modifiers:[{level:2,name:\"tconstruct:sweeping_edge\"},{level:4,name:\"tconstruct:conducting\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.8f,\"tconstruct:durability\":1.15f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.04f,\"tconstruct:attack_speed\":2.16f,\"tconstruct:durability\":518.075f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":1.5f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "expatternprovider:wireless_tool",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtmthings:lv_digital_miner",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:indium_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:cupronickel_coil_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:pyrolyse_oven",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iceandfire:dragonsteel_fire_ingot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:obsidian_reinforcement",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:manyullyn_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 9,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bhc:yellow_heart",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:basic_electronic_circuit",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:good_electronic_circuit",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_electric_motor",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:mv_electric_motor",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hv_electric_motor",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_conveyor_module",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:mv_conveyor_module",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hv_conveyor_module",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_machine_hull",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:mv_machine_hull",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hv_machine_hull",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:polyethylene_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtnn:ender_fluid_link_cover",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ae2:drive",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_world_accelerator",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:laser_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"gm_construct:damascus_steel\",\"tconstruct:wood\",\"tconstruct:wood\",\"gm_construct:damascus_steel\"],tic_modifiers:[{level:4,name:\"tconstruct:reinforced\"},{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"sakuratinker:energy_display\"}],tic_multipliers:{\"tconstruct:durability\":1.2f},tic_persistent:{},tic_stats:{\"sakuratinker:cooldown\":2.0f,\"sakuratinker:penetration\":1.0f,\"sakuratinker:range\":5.0f,\"tconstruct:attack_damage\":4.8f,\"tconstruct:attack_speed\":1.1f,\"tconstruct:durability\":1145.7601f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:max_energy\":5000.0f,\"tconstruct:mining_speed\":4.5f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:laser_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:chorus\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:chorus\"],tic_modifiers:[{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"sakuratinker:energy_display\"},{level:2,name:\"tconstruct:enderference\"}],tic_multipliers:{\"tconstruct:durability\":1.2f},tic_persistent:{},tic_stats:{\"sakuratinker:cooldown\":2.0f,\"sakuratinker:penetration\":1.0f,\"sakuratinker:range\":5.0f,\"tconstruct:attack_damage\":2.55f,\"tconstruct:attack_speed\":0.99f,\"tconstruct:durability\":338.40002f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:max_energy\":5000.0f,\"tconstruct:mining_speed\":2.1375f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:laser_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:osmium\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:osmium\"],tic_modifiers:[{level:2,name:\"tconstruct:dense\"},{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"sakuratinker:energy_display\"}],tic_multipliers:{\"tconstruct:durability\":1.2f},tic_persistent:{},tic_stats:{\"sakuratinker:cooldown\":2.0f,\"sakuratinker:penetration\":1.0f,\"sakuratinker:range\":5.0f,\"tconstruct:attack_damage\":3.3f,\"tconstruct:attack_speed\":0.99f,\"tconstruct:durability\":741.0f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:max_energy\":5000.0f,\"tconstruct:mining_speed\":3.0375f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "waystones:waystone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "travelersbackpack:standard",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:silicon_boule",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:phosphorus_boule",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:rubber_gloves",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:bronze_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 20,
+                "max": 40
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:damascus_steel_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 32,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "functionalstorage:fluid_1",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "functionalstorage:rubber_1",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "functionalstorage:copper_upgrade",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:purified_realgar_ore",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:black_bronze_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 9,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:polytetrafluoroethylene_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 9,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:polyethylene_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 9,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:polyvinyl_chloride_ring",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:polybenzimidazole_tiny_fluid_pipe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "survivalistessentials:wooden_cup",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bhc:red_heart",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tiny_nether_star_dust",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ae2:calculation_processor_press",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ae2:engineering_processor_press",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:sponge\",\"tinkers_thinking:sponge\",\"tinkers_thinking:sponge\"],tic_modifiers:[{level:3,name:\"tinkers_thinking:disarm\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.0f,\"tconstruct:attack_speed\":1.26f,\"tconstruct:durability\":712.5f,\"tconstruct:mining_speed\":0.95f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:iron\",\"tconstruct:iron\",\"tconstruct:iron\"],tic_modifiers:[{level:3,name:\"tconstruct:magnetic\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":3.0f,\"tconstruct:attack_speed\":1.2f,\"tconstruct:durability\":275.0f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":6.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:seared_stone\",\"tconstruct:seared_stone\",\"tconstruct:seared_stone\"],tic_modifiers:[{level:3,name:\"tconstruct:searing\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":2.625f,\"tconstruct:attack_speed\":1.2f,\"tconstruct:durability\":191.25f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":7.15f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:dusk\",\"tinkers_thinking:dusk\",\"tinkers_thinking:dusk\"],tic_modifiers:[{level:3,name:\"tconstruct:overslime\"},{level:3,name:\"tinkers_thinking:overdose\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":4.0625f,\"tconstruct:attack_speed\":1.26f,\"tconstruct:durability\":276.25f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":4.725f,\"tconstruct:overslime\":50.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:verdant_frogcroaking\",\"tinkers_thinking:verdant_frogcroaking\",\"tinkers_thinking:verdant_frogcroaking\"],tic_modifiers:[{level:3,name:\"tinkers_thinking:sculk_catalyse\"},{level:3,name:\"tinkers_thinking:sculk_levitate\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":2.6999998f,\"tconstruct:attack_speed\":1.38f,\"tconstruct:durability\":403.75f,\"tconstruct:harvest_tier\":\"minecraft:gold\",\"tconstruct:mining_speed\":5.75f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:white_chocolate\",\"tinkers_thinking:white_chocolate\",\"tinkers_thinking:white_chocolate\"],tic_modifiers:[{level:3,name:\"tinkers_thinking:inspired\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.8374999f,\"tconstruct:attack_speed\":1.44f,\"tconstruct:durability\":280.0f,\"tconstruct:harvest_tier\":\"minecraft:gold\",\"tconstruct:mining_speed\":5.1000004f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:burnt_ashes\",\"tinkers_thinking:burnt_ashes\",\"tinkers_thinking:burnt_ashes\"],tic_modifiers:[{level:1,name:\"tconstruct:pierce\"},{level:3,name:\"tinkers_thinking:burning_out\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":3.9374998f,\"tconstruct:attack_speed\":1.14f,\"tconstruct:durability\":637.5f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":4.675f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:tempered_glass\",\"tinkers_thinking:tempered_glass\",\"tinkers_thinking:tempered_glass\"],tic_modifiers:[{level:3,name:\"tinkers_thinking:durable\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":3.1499999f,\"tconstruct:attack_speed\":1.08f,\"tconstruct:durability\":2250.0f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":3.6f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:arrow_thrower",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"gm_construct:cobalt_brass\",\"gm_construct:cobalt_brass\",\"gm_construct:cobalt_brass\"],tic_modifiers:[],tic_multipliers:{\"tconstruct:draw_speed\":10.0f,\"tconstruct:durability\":1.15f,\"tconstruct:projectile_damage\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.80999994f,\"tconstruct:attack_damage\":3.75f,\"tconstruct:draw_speed\":10.58f,\"tconstruct:durability\":1585.62f,\"tconstruct:projectile_damage\":2.5f,\"tconstruct:use_item_speed\":0.6f,\"tconstruct:velocity\":0.45f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:arrow_thrower",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:treated_wood\",\"tconstruct:treated_wood\",\"tconstruct:treated_wood\"],tic_modifiers:[{level:3,name:\"tconstruct:preserved\"}],tic_multipliers:{\"tconstruct:draw_speed\":10.0f,\"tconstruct:durability\":1.15f,\"tconstruct:projectile_damage\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.54999995f,\"tconstruct:attack_damage\":3.75f,\"tconstruct:draw_speed\":10.5f,\"tconstruct:durability\":921.29376f,\"tconstruct:projectile_damage\":2.5f,\"tconstruct:use_item_speed\":0.6f,\"tconstruct:velocity\":0.35f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:arrow_thrower",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:rose_gold\",\"tconstruct:rose_gold\",\"tconstruct:rose_gold\"],tic_modifiers:[{level:3,name:\"tconstruct:enhanced\"}],tic_multipliers:{\"tconstruct:draw_speed\":10.0f,\"tconstruct:durability\":1.15f,\"tconstruct:projectile_damage\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":1.0f,\"tconstruct:attack_damage\":3.25f,\"tconstruct:draw_speed\":11.5f,\"tconstruct:durability\":207.0f,\"tconstruct:projectile_damage\":2.5f,\"tconstruct:use_item_speed\":0.6f,\"tconstruct:velocity\":0.19999999f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:mace",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:flint\",\"tconstruct:flint\"],tic_modifiers:[{level:2,name:\"tconstruct:jagged\"},{level:1,name:\"tinkers_thinking:falling_attack\"}],tic_multipliers:{\"tconstruct:durability\":0.8f,\"tconstruct:mining_speed\":1.4f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.775f,\"tconstruct:attack_speed\":0.6f,\"tconstruct:durability\":57.8f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:mining_speed\":4.9f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:mace",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:prismarine\",\"tinkers_thinking:prismarine\"],tic_modifiers:[{level:4,name:\"tconstruct:hydraulic\"},{level:1,name:\"tinkers_thinking:falling_attack\"}],tic_multipliers:{\"tconstruct:durability\":0.8f,\"tconstruct:mining_speed\":1.4f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":6.05f,\"tconstruct:attack_speed\":0.66f,\"tconstruct:durability\":180.0f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:mining_speed\":1.54f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:mace",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:bone\",\"tconstruct:bone\"],tic_modifiers:[{level:2,name:\"tconstruct:pierce\"},{level:1,name:\"tinkers_thinking:falling_attack\"}],tic_multipliers:{\"tconstruct:durability\":0.8f,\"tconstruct:mining_speed\":1.4f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":6.25f,\"tconstruct:attack_speed\":0.66f,\"tconstruct:durability\":60.0f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:mining_speed\":3.5f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:mace",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:verdant_frogcroaking\",\"tinkers_thinking:verdant_frogcroaking\"],tic_modifiers:[{level:2,name:\"tinkers_thinking:sculk_catalyse\"},{level:2,name:\"tinkers_thinking:sculk_levitate\"},{level:1,name:\"tinkers_thinking:falling_attack\"}],tic_multipliers:{\"tconstruct:durability\":0.8f,\"tconstruct:mining_speed\":1.4f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.3999996f,\"tconstruct:attack_speed\":0.69f,\"tconstruct:durability\":323.0f,\"tconstruct:harvest_tier\":\"minecraft:gold\",\"tconstruct:mining_speed\":8.05f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tinkers_thinking:mace",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_thinking:netherrack\",\"tinkers_thinking:netherrack\"],tic_modifiers:[{level:2,name:\"tinkers_thinking:hellish\"},{level:1,name:\"tinkers_thinking:falling_attack\"}],tic_multipliers:{\"tconstruct:durability\":0.8f,\"tconstruct:mining_speed\":1.4f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.5125f,\"tconstruct:attack_speed\":0.66f,\"tconstruct:durability\":32.0f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:mining_speed\":6.9300003f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_wrought_iron_chainsaw",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Charge:2147483647L,Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,HarvestIce:1b,TreeFelling:1b},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:383,ToolSpeed:8.0f},HideFlags:2,MaxCharge:2147483647L}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:copper_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tin_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:iron_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:gold_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lead_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:sapphire_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:netherrack_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:gallium_dust",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:wrought_iron_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:magnetic_iron_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:stainless_steel_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:invar_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pattern",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ae2:fluix_glass_cable",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ae2:fluix_crystal",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:seared_brick",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:seared_bricks",
+          "weight": 1,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:battle_flag",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:seared_stone\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:seared_stone\",\"tconstruct:seared_stone\"],tic_modifiers:[{level:3,name:\"tconstruct:searing\"},{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:reach\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.5f,\"tconstruct:durability\":1.2f},tic_persistent:{},tic_stats:{\"sakuratinker:attack_buff_time\":40.0f,\"sakuratinker:charging_time\":240.0f,\"sakuratinker:defence_buff_time\":40.0f,\"sakuratinker:range\":8.0f,\"tconstruct:attack_damage\":2.4750001f,\"tconstruct:attack_speed\":0.5f,\"tconstruct:durability\":189.0f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":7.8f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:tinker_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:seared_stone\",\"tconstruct:seared_stone\",\"sakuratinker:feather\"],tic_modifiers:[{level:2,name:\"tconstruct:searing\"},{level:1,name:\"sakuratinker:feather\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f,\"tconstruct:durability\":0.2f,\"tconstruct:mining_speed\":0.5f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":0.9659999f,\"tconstruct:durability\":38.25f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":3.575f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:seared_stone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pick_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:seared_stone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:revolver",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:seared_stone\"],tic_modifiers:[{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:searing\"},{level:1,name:\"sakuratinker:revolver_bullet\"}],tic_multipliers:{\"tconstruct:attack_speed\":1.1f,\"tconstruct:durability\":2.0f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.05f,\"tconstruct:attack_speed\":1.375f,\"tconstruct:durability\":102.0f,\"tconstruct:mining_speed\":1.1f},tic_volatile_data:{abilities:1,\"sakuratinker:is_modifiable\":1b,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:seared_basin",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nethersdelight:hoglin_sirloin",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nethersdelight:propelpearl",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "caneswonderfulspidersoverhaul:cooked_jumping_spider_leg",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:tuna_roll",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:roasted_sunflower_seeds",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:steamed_green_beans",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:pumpkin_soup",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pig_iron_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:amethyst_bronze_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:steel_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:magnetic_steel_ingot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:magnetic_steel_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:steel_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:red_steel_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:tinker_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:eezo\",\"sakuratinker:eezo\",\"sakuratinker:feather\"],tic_modifiers:[{level:2,name:\"sakuratinker:dissloving\"},{level:1,name:\"sakuratinker:feather\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f,\"tconstruct:durability\":0.2f,\"tconstruct:mining_speed\":0.5f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":2.7840002f,\"tconstruct:attack_speed\":1.1f,\"tconstruct:durability\":292.75998f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":4.2000003f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:tinker_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:aurumos\",\"sakuratinker:aurumos\",\"sakuratinker:feather\"],tic_modifiers:[{level:2,name:\"sakuratinker:solar_burning\"},{level:4,name:\"sakuratinker:polishing\"},{level:1,name:\"sakuratinker:feather\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f,\"tconstruct:durability\":0.2f,\"tconstruct:mining_speed\":0.5f},tic_persistent:{},tic_stats:{\"sakuratinker:polish\":70.0f,\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":3.128f,\"tconstruct:attack_speed\":1.2f,\"tconstruct:durability\":318.72f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":2.3f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:tinker_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:lead\",\"tconstruct:lead\",\"sakuratinker:feather\"],tic_modifiers:[{level:2,name:\"tconstruct:heavy\"},{level:1,name:\"sakuratinker:feather\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f,\"tconstruct:durability\":0.2f,\"tconstruct:mining_speed\":0.5f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":1.9733999f,\"tconstruct:attack_speed\":0.95f,\"tconstruct:durability\":36.0f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:knockback_resistance\":0.3f,\"tconstruct:mining_speed\":2.5f,\"tconstruct:projectile_damage\":2.4f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:tinker_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:treated_wood\",\"tconstruct:treated_wood\",\"sakuratinker:feather\"],tic_modifiers:[{level:2,name:\"tconstruct:preserved\"},{level:1,name:\"sakuratinker:feather\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f,\"tconstruct:durability\":0.2f,\"tconstruct:mining_speed\":0.5f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":0.92f,\"tconstruct:attack_speed\":0.9f,\"tconstruct:durability\":93.6f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\" tconstruct:mining_speed\":1.5749999f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:bow_limb",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:treated_wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:bow_limb",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:bow_limb",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tinkers_thinking:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:bow_limb",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"gm_construct:red_steel\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neodymium_dust",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:silver\",\"tconstruct:silver\",\"tinkers_thinking:paper\"],tic_modifiers:[{level:2,name:\"tconstruct:holy\"},{level:1,name:\"tinkers_thinking:soft\"},{level:2,name:\"tconstruct:writable\"}],tic_multipliers:{\"tconstruct:durability\":2.0f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.6f,\"tconstruct:attack_damage\":2.25f,\"tconstruct:draw_speed\":0.85f,\"tconstruct:durability\":405.0f,\"tconstruct:velocity\":1.1f},tic_volatile_data:{abilities:1,upgrades:5}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:lead\",\"tconstruct:lead\",\"tinkers_thinking:paper\"],tic_modifiers:[{level:2,name:\"tconstruct:heavy\"},{level:1,name:\"tinkers_thinking:soft\"},{level:2,name:\"tconstruct:writable\"}],tic_multipliers:{\"tconstruct:durability\":2.0f},tic_persistent:{},tic_stats:{\"tconstruct:accuracy\":0.6f,\"tconstruct:attack_damage\":3.25f,\"tconstruct:draw_speed\":0.7f,\"tconstruct:durability\":270.0f,\"tconstruct:knockback_resistance\":0.3f,\"tconstruct:projectile_damage\":2.4f,\"tconstruct:velocity\":1.15f},tic_volatile_data:{abilities:1,upgrades:5}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:great_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:5,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:reach\"},{level:1,name:\"sakuratinker:heavy\"}],tic_multipliers:{\"tconstruct:attack_damage\":1.8f,\"tconstruct:durability\":4.0f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":10.799999f,\"tconstruct:attack_speed\":0.5f,\"tconstruct:durability\":540.0f,\"tconstruct:mining_speed\":4.5f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:great_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:5,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:reach\"},{level:1,name:\"sakuratinker:heavy\"}],tic_multipliers:{\"tconstruct:attack_damage\":1.8f,\"tconstruct:durability\":4.0f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":10.799999f,\"tconstruct:attack_speed\":0.5f,\"tconstruct:durability\":540.0f,\"tconstruct:mining_speed\":4.5f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:swift_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:4,name:\"tconstruct:cultivated\"},{level:1,name:\"sakuratinker:swift_sword_technique\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.6f,\"tconstruct:durability\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":0.72f,\"tconstruct:attack_speed\":2.5f,\"tconstruct:durability\":75.0f,\"tconstruct:mining_speed\":2.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:swift_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:4,name:\"tconstruct:cultivated\"},{level:1,name:\"sakuratinker:swift_sword_technique\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.6f,\"tconstruct:durability\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":0.72f,\"tconstruct:attack_speed\":2.5f,\"tconstruct:durability\":75.0f,\"tconstruct:mining_speed\":2.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:swift_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"tconstruct:copper\",\"tconstruct:copper\",\"tconstruct:copper\"],tic_modifiers:[{level:1,name:\"sakuratinker:swift_sword_technique\"},{level:4,name:\"tconstruct:dwarven\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.6f,\"tconstruct:durability\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.1220001f,\"tconstruct:attack_speed\":2.5f,\"tconstruct:durability\":157.50002f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":6.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:swift_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"gm_construct:aluminium\",\"gm_construct:aluminium\",\"gm_construct:aluminium\",\"gm_construct:aluminium\"],tic_modifiers:[{level:1,name:\"sakuratinker:swift_sword_technique\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.6f,\"tconstruct:durability\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":5.2200003f,\"tconstruct:attack_speed\":2.5f,\"tconstruct:durability\":960.0f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":6.0f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:swift_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:slimesteel\",\"tconstruct:slimesteel\",\"tconstruct:slimesteel\",\"tconstruct:slimesteel\"],tic_modifiers:[{level:4,name:\"tconstruct:overslime\"},{level:4,name:\"tconstruct:overcast\"},{level:1,name:\"sakuratinker:swift_sword_technique\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.6f,\"tconstruct:durability\":1.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":2.22f,\"tconstruct:attack_speed\":2.25f,\"tconstruct:durability\":1820.0f,\"tconstruct:harvest_tier\":\"minecraft:diamond\",\"tconstruct:mining_speed\":6.0f,\"tconstruct:overslime\":562.5f},tic_volatile_data:{abilities:1,upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:coke_oven_bricks",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:firebricks",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:wood_wall",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:heatproof_machine_casing",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:cinderslime_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hp_steam_rock_crusher",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hp_steam_compressor",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

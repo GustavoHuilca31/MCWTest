@@ -1,0 +1,144 @@
+{
+  "config_version": "2.0.7b",
+  "config_datetime": "2025-12-08_20-11-36",
+  "general": {
+    "disable_all_structures": false,
+    "prevent_structure_overlap": true,
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 1.0
+  },
+  "structure_namespaces": [
+    {
+      "name": "ae2",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 2000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "betteroceanmonuments",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 2000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "castle_in_the_sky",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 4000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "common_stargates",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 2000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "dungeons_arise",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 4000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "sgjourney",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 2000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "sky_whale_ship",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": false,
+      "min_distance_from_world_center": 2000,
+      "max_distance_from_world_center": 0
+    }
+  ],
+  "structures": [
+    {
+      "name": "minecraft:ancient_city",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "underground_decoration",
+      "terrain_adaptation": "beard_box",
+      "max_distance_from_center": 20,
+      "max_horizontal_distance_from_center": 116,
+      "max_vertical_distance_from_center": 116,
+      "override_global_distance_from_world_center": false,
+      "min_distance_from_world_center": 4000,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:castillo",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:dojo",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": false,
+      "min_distance_from_world_center": 1500,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:marble_chateau",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:old_fort",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:spider_nest",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "underground_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0
+    },
+    {
+      "name": "ati_structures:villager_inn",
+      "is_disabled": false,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0
+    }
+  ],
+  "structure_sets": []
+}

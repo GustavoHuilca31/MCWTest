@@ -1,0 +1,1183 @@
+Event Overview
+LootJS provides the lootjs KubeJS event to create your loot modifications or for other stuff. The event is server-sided and can be reloaded by invoking /reload.
+To learn more about KubeJS events, please refer to their wiki.
+
+LootJS.modifiers((event) => {
+    // your code
+});
+addBlockLootModifier
+Adds a new loot modifier for blocks.
+The function returns a builder object so you can add conditions and actions.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .randomChance(0.3)
+        .addLoot("minecraft:gunpowder");
+});
+addEntityLootModifier
+Adds a new loot modifier for entities.
+The function returns a builder object so you can add conditions and actions.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .addLoot("minecraft:gunpowder");
+});
+addLootTableModifier
+Adds a new loot modifier for loot tables. You can use multiple loot table ids or use a regular expression for values.
+The function returns a builder object so you can add conditions and actions.
+
+LootJS.modifiers((event) => {
+    // by id
+    event
+        .addLootTableModifier("minecraft:entities/creeper")
+        .randomChance(0.3)
+        .addLoot("minecraft:gunpowder");
+
+    // by regular expression
+    event
+        .addLootTableModifier(/.*creeper.*/)
+        .randomChance(0.3)
+        .addLoot("minecraft:gunpowder");
+});
+addLootTypeModifier
+Adds a new loot modifier for a given loot type. You can also use multiple LootType's for types.
+The function returns a builder object so you can add conditions and actions.
+
+LootJS.modifiers((event) => {
+    event
+        .addLootTypeModifier(LootType.ENTITY) // or multiple LootType.BLOCK, LootType.CHEST ...
+        .randomChance(0.3)
+        .addLoot("minecraft:gravel");
+});
+Existing loot types
+LootType.UNKNOWN
+LootType.BLOCK
+LootType.ENTITY
+LootType.CHEST
+LootType.FISHING
+LootType.GIFT
+Disable wither nether star drop and mob head drops
+LootJS.modifiers(event => {
+    event.disableWitherStarDrop()
+    event.disableCreeperHeadDrop()
+    event.disableSkeletonHeadDrop()
+    event.disableZombieHeadDrop()
+})
+enableLogging()
+Enables the log output.
+
+LootJS.modifiers((event) => {
+    event.enableLogging();
+});
+getGlobalModifiers() FORGE ONLY
+Returns a list of all registered global loot modifiers from other mods.
+
+LootJS.modifiers((event) => {
+    const modifiers = event.getGlobalModifiers();
+    modifiers.forEach((modifier) => {
+        console.log(modifier)
+    });
+});
+removeGlobalModifier FORGE ONLY
+Remove one or multiple global loot modifiers from other mods. Can be used to prevent mods from adding their own loot through global loot. This will not work if the mod adds their items directly into the loot tables.
+You can pass multiple loot tables or mod ids.
+
+LootJS.modifiers((event) => {
+    event.removeGlobalModifier("examplemod:example_loot_change"); // by location
+    event.removeGlobalModifier("@examplemod"); // by mod id. Use `@` as prefix
+});
+disableLootModification FORGE ONLY
+Disables the loot modification for given values.
+values can be resource locations for the loot table or a regular expression.
+
+LootJS.modifiers((event) => {
+    // all leaves disabled via regex
+    event.disableLootModification(/.*:blocks\/.*_leaves/);
+    
+    // disable bats
+    event.disableLootModification("minecraft:entities/bat");
+});
+Actions
+Actions are used to change the current loot pool outcome or to trigger effects. You can simply chain multiple actions together. For every Loot Modification, you need at least one action.
+
+addLoot
+Adds one or multiple items to the current loot pool.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").addLoot("minecraft:flint");
+});
+addAlternativesLoot
+According to the Minecraft Wiki: Will only add the first successful (conditions are met) item to the loot pool. If no item is successful, no item will be added.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:coal_ore")
+        .removeLoot(Ingredient.all)
+        .addAlternativesLoot(
+            LootEntry.of("minecraft:apple").when((c) => c.randomChance(0.8)),
+            LootEntry.of("minecraft:stick").when((c) => c.randomChance(0.3)),
+            LootEntry.of("minecraft:diamond").when((c) => c.randomChance(0.7)),
+            LootEntry.of("minecraft:coal").when((c) => c.randomChance(0.99)),
+            LootEntry.of("minecraft:torch").when((c) => c.randomChance(0.2))
+        );
+});
+Another more complex example can be found here
+
+addSequenceLoot
+Will add multiple items which will be rolled one after another. According to the Minecraft Wiki, it will add all items until one condition fails. After that no more items will be added.
+
+In our example, all items in order may be added to the loot pool. But if one item fails, this item and all following items will not be added.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:coal_ore")
+        .removeLoot(Ingredient.all)
+        .addSequenceLoot(
+            LootEntry.of("minecraft:apple").when((c) => c.randomChance(0.8)),
+            LootEntry.of("minecraft:stick").when((c) => c.randomChance(0.3)),
+            LootEntry.of("minecraft:diamond").when((c) => c.randomChance(0.7)),
+            LootEntry.of("minecraft:coal").when((c) => c.randomChance(0.99)),
+            LootEntry.of("minecraft:torch").when((c) => c.randomChance(0.2))
+        );
+});
+Another more complex example can be found here
+
+addWeightedLoot
+Adds one or multiple items with weights to the current loot pool. If a NumberProvider is given, it will roll multiple items based on it.
+
+Example: [3, 10] is the number provider with 3 min and 10 max rolls. LootJS will randomly select a value between min and max.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .addWeightedLoot(
+            [3, 10],
+            [Item.of("minecraft:gunpowder").withChance(50), Item.of("minecraft:nether_star").withChance(5)]
+        );
+});
+You can also use a number only which is then treated as [n, n].
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .addWeightedLoot(5, [
+            Item.of("minecraft:gunpowder").withChance(50),
+            Item.of("minecraft:nether_star").withChance(5),
+        ]);
+});
+If you don't use a number provider, it's equal to [1, 1].
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .addWeightedLoot([
+            Item.of("minecraft:gunpowder").withChance(50),
+            Item.of("minecraft:nether_star").withChance(5),
+        ]);
+});
+removeLoot
+Removes all items from the current loot pool which matches the given ItemFilter.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").removeLoot("minecraft:flint");
+});
+replaceLoot
+Replaces all items from the current loot pool which match the given ItemFilter. As third argument you can specify if the stack size should be preserved. Default is false.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").replaceLoot("minecraft:flint", "minecraft:diamond");
+    // or .replaceLoot("minecraft:flint", "minecraft:diamond", true) if you want to preserve the stack size
+});
+In this example, we want to replace flint with diamonds in the gravel loot pool.
+
+modifyLoot
+For every item in the current loot pool which matches the given ItemFilter, a callback will be called. LootJS will pass the item into the callback to modify it and return the item. Make sure to always return an item.
+
+LootJS.modifiers((event) => {
+    event
+        .addLootTypeModifier(LootType.ENTITY)
+        .weatherCheck({
+            raining: true,
+        })
+        .modifyLoot(Ingredient.all, (itemStack) => {
+            itemStack.setCount(itemStack.getCount() * 2);
+            return itemStack;
+        });
+});
+In this example, we will double all loot when it's raining.
+
+triggerExplosion
+Triggers an explosion on the position where the loot will be dropped. The items will not be destroyed. The radius can be any number. For destroy and fire you can pass true or false.
+
+LootJS.modifiers((event) => {
+    // .triggerExplosion(1, destroy?, fire?)
+    event.addBlockLootModifier("minecraft:gravel").triggerExplosion(1, false, false);
+});
+triggerLightningStrike
+Triggers a lightning strike on the position where the loot will be dropped. The items will not be destroyed. Use true or false for shouldDamage.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").triggerLightningStrike(false);
+});
+dropExperience
+Drops amount of experience on the position where the loot will be dropped.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").dropExperience(5);
+});
+pool
+Roll a dynamic created pool. The callback provides a pool you can work with. If an NumberProvider is given through .rolls(), it will roll the pool multiple times.
+
+Example: [1, 3] is the number provider with 1 min and 3 max rolls. LootJS will randomly select a value between min and max.
+
+LootJS.modifiers((event) => {
+    event.addEntityLootModifier("minecraft:creeper").pool((pool) => {
+        pool.rolls([1, 3]);
+        pool.randomChance(0.3)
+            .or((or) => {
+                or.anyBiome("minecraft:jungle");
+                or.lightLevel(0, 7);
+            })
+            .addLoot("minecraft:diamond");
+    });
+});
+playerAction
+Use playerAction to trigger custom actions to a player. The callback provides you the vanilla player, not the PlayerJS class from KubeJS.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:diamond_block").playerAction((player) => {
+        player.giveExperiencePoints(100);
+    });
+});
+apply callback
+With apply, you apply a custom callback onto the current loot pool. LootJS will provide you the LootContextJS.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:gravel").apply((context) => {
+        // do whatever you like
+        // example: context.level to access the level
+    });
+});
+Conditions
+Besides actions, you can use conditions to apply filters.
+If a condition fails, no actions will be triggered after the failing condition. You also can chain multiple conditions to apply more filters to your loot modifier.
+
+matchLoot
+Matching the loot pool by the given ItemFilter.
+exact is optional and does not need to be passed. The default value is false. If exact is true, all items in the current loot pool need to match the ItemFilter.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:cow")
+        .matchLoot("minecraft:leather")
+        // .matchLoot("minecraft:leather", true) // exact = true
+        .addLoot("minecraft:carrot");
+});
+matchMainHand
+Matching the players' main hand by the given ItemFilter.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("#forge:ores")
+        .matchMainHand(Item.of("minecraft:netherite_pickaxe").ignoreNBT())
+        .addLoot("minecraft:gravel");
+});
+matchOffHand
+Matching the players' off hand by the given ItemFilter.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("#forge:ores")
+        .matchOffHand(Item.of("minecraft:netherite_pickaxe").ignoreNBT())
+        .addLoot("minecraft:gravel");
+});
+matchEquip
+Matching the players' equipment slot by the given ItemFilter.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("#forge:ores")
+        .matchEquip(EquipmentSlot.MAINHAND, Item.of("minecraft:netherite_pickaxe").ignoreNBT())
+        .addLoot("minecraft:gravel");
+});
+survivesExplosion
+Returns true if the destroyed block would survive an explosion. This condition doesn't invoke an explosion.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .survivesExplosion()
+        .addLoot("minecraft:gravel");
+});
+timeCheck
+Checks for the game time which is the age of the world in-game ticks.
+
+From Minecraft Wiki: period-> "If present, the game time is first reduced modulo the given number before being checked against. Setting this to 24000 causes the checked time to be equal to the current daytime."
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .timeCheck(24000, 0, 9000) // good morning
+        .addLoot("minecraft:diamond");
+});
+weatherCheck
+Checks if the current weather is rain and/or thunder.
+
+Value syntax:
+
+{
+    raining: true, // or false
+    thundering: true // or false
+}
+If you just use one, the other one will be ignored.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .weatherCheck({
+            raining: true,
+        })
+        .addLoot("minecraft:diamond");
+});
+If you want to check for clear weather, set both values to false.
+
+randomChance
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .randomChance(0.3) // 30%
+        .addLoot("minecraft:diamond");
+});
+randomChanceWithLooting
+Random chance with a looting multiplier. More on Minecraft Wiki.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .randomChanceWithLooting(0.3, 2) // 30% 
+        .addLoot("minecraft:diamond");
+});
+randomChanceWithEnchantment
+Random chance with enchantment. More on Minecraft Wiki for table_bonus.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .randomChanceWithEnchantment("minecraft:looting", [0, 0.1, 0.5, 1]) 
+        .addLoot("minecraft:diamond");
+    
+    /*
+        [0, 0.1, 0.5, 1]:
+          0% for no looting
+         10% for looting 1
+         50% for looting 2
+        100% for looting 3
+    */
+});
+biome
+Checks for given biomes. If multiple biomes given, all biomes must match. With the prefix #, you can pass biome tags, so it's possible to check if a biome is #minecraft:is_forest for example.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .biome("minecraft:jungle") 
+        .addLoot("minecraft:diamond");
+});
+anyBiome
+Checks for given biomes. If multiple biomes are given, at least one biome must match. With the prefix #, you can pass biome tags, so it's possible to check if a biome is #minecraft:is_forest for example.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .anyBiome("minecraft:jungle", "#minecraft:is_forest") 
+        .addLoot("minecraft:diamond");
+});
+anyDimension
+Checks for given dimensions. If multiple dimensions are given, at least one dimension must match.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .anyDimension("minecraft:the_nether") 
+        .addLoot("minecraft:diamond");
+});
+anyStructure
+Checks for given structures. You have to pass the structures as an array-like.
+
+If exact is true, it will check if the player is inside the structure parts (like houses in a village).
+If exact is false, it will just check if the player is within the structure bounds.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .anyStructure(["minecraft:stronghold", "minecraft:village"], false) 
+        .addLoot("minecraft:diamond");
+});
+lightLevel
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .lightLevel(0, 15) 
+        .addLoot("minecraft:diamond");
+});
+killedByPlayer
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .killedByPlayer() 
+        .addLoot("minecraft:diamond");
+});
+matchEntity(
+Matches against the entity that died, opened the chest or destroyed the block. LootJS will provide EntityPredicateBuilderJS in your callback to match against the entity.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .matchEntity((entity) => {
+            // Your code. Check EntityPredicateBuilderJS for more information
+        }) 
+        .addLoot("minecraft:diamond");
+});
+matchDirectKiller
+Matches against the direct entity which caused the death, e.g. the arrow entity, not the shooter. LootJS will provide EntityPredicateBuilderJS in your callback to match against an entity.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .matchDirectKiller((entity) => {
+            // Your code. Check EntityPredicateBuilderJS for more information
+        }) 
+        .addLoot("minecraft:diamond");
+});
+matchKiller
+Matches against the entity which caused the death. LootJS will provide EntityPredicateBuilderJS in your callback to match against an entity.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .matchKiller((entity) => {
+            // Your code. Check EntityPredicateBuilderJS for more information
+        }) 
+        .addLoot("minecraft:diamond");
+});
+matchPlayer
+Matches against the player. If a player kills another player, it will check against the killer. LootJS will provide EntityPredicateBuilderJS in your callback to match against an entity.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .matchPlayer((player) => {
+            // Your code. Check EntityPredicateBuilderJS for more information
+        }) 
+        .addLoot("minecraft:diamond");
+});
+matchDamageSource
+Matches against the damage source. LootJS will provide DamageSourcePredicateBuilderJS in your callback to check against.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .matchDamageSource((source) => {
+            // Your code. Check DamageSourcePredicateBuilderJS for more information
+        }) 
+        .addLoot("minecraft:diamond");
+});
+distanceToKiller
+For the interval, use [IntervalJS][IntervalJS].
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .distanceToKiller(Interval.min(25)) 
+        .addLoot("minecraft:diamond");
+});
+hasAnyStage
+Checks for player stages.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:pig")
+        .hasAnyStage("stoneage")
+        .addLoot("minecraft:coal");
+});
+playerPredicate
+Custom callback predicate to check the player. The callback must return either true or false.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:pig")
+        .playerPredicate((player) => player.getHealth() > 5)
+        .addLoot("minecraft:emerald");
+});
+entityPredicate
+Custom callback predicate to check the entity. The callback must return either true or false.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:pig")
+        .entityPredicate((entity) => entity.type == "minecraft:pig")
+        .addLoot("minecraft:diamond");
+});
+killerPredicate
+Custom callback predicate to check the killer. The callback must return either true or false.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:pig")
+        .killerPredicate((entity) => entity.type == "minecraft:pig")
+        .addLoot("minecraft:feather");
+});
+directKillerPredicate
+Custom callback predicate to check the direct killer. The callback must return either true or false.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:pig")
+        .directKillerPredicate((entity) => entity.type == "minecraft:pig")
+        .addLoot("minecraft:stone");
+});
+not
+Add a condition through the callback which will be negated.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .not((n) => {
+            n.biome("minecraft:jungle")
+        })
+        .addLoot("minecraft:diamond");
+});
+or
+Add multiple conditions through the callback which will return true when at least one condition returns true.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .or((or) => {
+            or.biome("minecraft:jungle").anyDimension("minecraft:the_nether");
+        })
+        .addLoot("minecraft:diamond");
+});
+and
+Add multiple conditions through the callback which will return true when all conditions return true.
+
+LootJS.modifiers((event) => {
+    event
+        .addEntityLootModifier("minecraft:creeper")
+        .and((and) => {
+            and.biome("minecraft:jungle").distanceToKiller(Interval.min(25));
+        })
+        .addLoot("minecraft:diamond");
+});
+customCondition
+Adds a custom condition via json.
+
+LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier("minecraft:gravel")
+        .customCondition({
+            condition: "minecraft:survives_explosion"
+        })
+        .addLoot("minecraft:diamond");
+});
+Functions
+Loot functions help you to transform items before they will be dropped. If you ever worked with vanilla loot tables, you will be familiar with them.
+
+enchantRandomly
+Randomly enchants the item. You can provide enchantments to choose from.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:diamond_axe");
+        p.enchantRandomly(); // It's also possible to provide enchantments
+    });
+});
+enchantWithLevels
+Randomly enchants with specific levels. Roughly equivalent to using an enchantment table. allowTreasure can be true or false if [treasure items][https://minecraft.fandom.com/wiki/enchanting#summary_of_enchantments] are allowed.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:diamond_pickaxe");
+        p.enchantWithLevels([2, 4]);
+    });
+});
+applyLootingBonus
+Adjusts the item stack size based on the looting enchantment level the killer has.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:emerald");
+        p.applyLootingBonus([1, 3]);
+    });
+});
+applyBinomialDistributionBonus
+Adjusts the item stack size based on a binomial distribution bonus.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:emerald");
+        p.applyBinomialDistributionBonus("minecraft:fortune", 0.2, 3); // p = 0.2, n = 3
+    });
+});
+applyOreBonus
+Adjusts the item stack size based on ore bonus. Used to simulate fortune effect. In the example we are using "minecraft:fortune" this does not mean the player's item must be enchanted with fortune. The given enchantment is used to calculate the bonus: bonus = random(enchantmentLevel + 2) + 1
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:emerald");
+        p.applyOreBonus("minecraft:fortune");
+    });
+});
+applyBonus
+Adjusts the item stack size based on a multiplier.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:emerald");
+        p.applyBonus("minecraft:fortune", 3);
+    });
+});
+simulateExplosionDecay
+Removes some items from the stack if there was an explosion.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot(Item.of("minecraft:emerald", 50));
+        p.simulateExplosionDecay();
+    });
+});
+smeltLoot
+Smelts the loot if possible. Can be used to simulate fire aspect. The example uses functions() to apply an ItemFilter.
+
+LootJS.modifiers((event) => {
+    event.addEntityLootModifier("minecraft:chicken").functions(Item.of("chicken"), (f) => {
+        f.smeltLoot();
+    });
+});
+damage
+Damages the item by friction between 0 and 1 where 0 is zero durability.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:netherite_sword");
+        p.damage([0.3, 0.9]);
+    });
+});
+addPotion
+Applies the potion nbt to the item.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:potion");
+        p.addPotion("poison");
+    });
+});
+limitCount
+Limits the stack size against the given number providers, where the first provider stands for min and the second one for max. If we only provide min, we will limit the stack size to at least that number.
+
+The following example will limit the stack size to at least 5 - 10 and max 30 - 64.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:diamond");
+        p.limitCount([5, 10], [30, 64]);
+    });
+});
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:diamond");
+        p.limitCount([5, 10]); // Items will have a stack size of 5 - 10
+    });
+});
+addAttributes
+Add attribute modifiers to the item. In the callback, you can use multiple functions to add attributes. probability can be used to have a random chance the attribute will be applied.
+
+If using simple, it will use the default equipment slot for the item.
+
+simple(attribute, NumberProvider)
+simple(probability, attribute, NumberProvider)
+forSlots(attribute, NumberProvider, ...slots)
+forSlots(probability, attribute, NumberProvider, ...slots)
+Possible attributes:
+
+generic.max_health
+generic.follow_range
+generic.knockback_resistance
+generic.movement_speed
+generic.flying_speed
+generic.attack_damage
+generic.attack_knockback
+generic.attack_speed
+generic.armor
+generic.armor_toughness
+generic.luck
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:diamond_sword");
+        p.addAttributes((attributes) => {
+            attributes.simple("generic.max_health", 1);
+            attributes.simple(0.99, "generic.max_health", 2);
+            attributes.forSlots("generic.max_health", 3, [SLOT_MAINHAND]);
+            attributes.forSlots(0.99, "generic.max_health", 4, [SLOT_OFFHAND]);
+        });
+    });
+});
+addLore
+Adds lore to the item. Can be used for some custom tooltips. You can use any Text.of(...) notation from KubeJS or just simple strings. You can also pass multiple components if you need multiple lines.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("");
+        p.addLore(["This is a lore", Text.red("This is a red lore")]);
+    });
+});
+replaceLore
+Replaces the current item lore.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("");
+        p.replaceLore(Text.of("Some lore text for your item"));
+    });
+});
+setName
+Sets the item's custom name.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:emerald");
+        p.setName(Text.blue("This is a blue name"));
+    });
+});
+addNBT or addNbt
+Adds nbt to the item.
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:emerald_block").pool((p) => {
+        p.addLoot("minecraft:iron_sword");
+        p.addNBT({ Damage: 20 });
+    });
+});
+functions
+Can be used to apply one or multiple functions to a specific ItemFilter. As a function will be applied to all items in the current pool, this or pools can be used to scope them.
+
+LootJS.modifiers((event) => {
+    event.addEntityLootModifier("minecraft:chicken").functions(ItemFilter.FOOD, (f) => {
+        f.smeltLoot();
+    });
+});
+customFunction
+Can be used to add a modded function via json. In the example we will use irons_spellbooks:randomize_spell and only apply it to weapons.
+
+LootJS.modifiers((event) => {
+    event.addLootTableModifier(/.*/).functions(ItemFilter.WEAPON, (f) => {
+        f.customFunction({
+            function: "irons_spellbooks:randomize_spell",
+            quality: {
+                min: 0.5,
+                max: 1,
+            },
+        });
+    });
+});
+LootEntry
+The LootEntry class is used to create a loot entry. Methods like addLoot, replaceLoot, modifyLoot etc. takes a LootEntry as a parameter, but you can still use item ids or other KubeJS item notations. But LootEntry's will give you more control over the loot, as you can directly chain functions onto it or add conditions through .when.
+
+Create a LootEntry
+LootEntry.of("minecraft:apple"); // Create a LootEntry from an item id
+LootEntry.of("minecraft:apple", 1); // With a count
+LootEntry.of("minecraft:apply", { ... }) // With nbt
+LootEntry.of("minecraft:apple", 1, { ... }) // With count and nbt
+LootEntry.withChance(item, chance); // With a chance. For `item` you can use any KubeJS notation for items
+Modify the LootEntry
+As mentioned above, you can just chain functions onto the LootEntry. For example:
+
+// Enchant the item with a random enchantment and damage it by 30%
+LootEntry.of("minecraft:diamond_sword").enchantRandomly().damage(0.3);
+Apply conditions
+You can easily add conditions to the LootEntry. This is useful to directly filter inside actions like addLoot, replaceLoot etc.
+
+// Add a condition that the item will only be added if the random chance is 0.3
+LootEntry.of("minecraft:apple").when((c) => c.randomChance(0.3));
+Example usage
+Default addLoot action
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("minecraft:oak_log").addLoot(
+        /**
+         * Creates a LootEntry with 50% chance of dropping a stick.
+         */
+        LootEntry.of("minecraft:stick").when((c) => c.randomChance(0.5)),
+        /**
+         * Creates a LootEntry with 50% chance of dropping a stick.
+         */
+        LootEntry.of("minecraft:apple").when((c) => c.randomChance(0.5))
+    );
+});
+Using addAlternativesLoot action
+LootJS.modifiers((event) => {
+    /**
+     * First loot entry with a condition. Will drop if the player has fortune.
+     */
+    const stickWhenFortune = LootEntry.of("minecraft:stick")
+        .applyOreBonus("minecraft:fortune")
+        .when((c) => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:fortune")));
+
+    /**
+     * Second loot entry with a condition. Will drop if the player has silk touch and the first entry doesn't match.
+     */
+    const appleWhenSilkTouch = LootEntry.of("minecraft:apple").when((c) =>
+        c.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+    );
+
+    /**
+     * No conditions just an item, so this will always drop if the other two don't.
+     */
+    const ironIngot = "minecraft:iron_ingot";
+
+    event
+        .addBlockLootModifier("minecraft:iron_ore")
+        .removeLoot(Ingredient.all)
+        .addAlternativesLoot(stickWhenFortune, appleWhenSilkTouch, ironIngot);
+});
+Using addSequenceLoot action
+LootJS.modifiers((event) => {
+    /**
+     * First loot entry with a condition. Will drop if the player has fortune.
+     */
+    const stickWhenFortune = LootEntry.of("minecraft:stick").when((c) =>
+        c.matchMainHand(ItemFilter.hasEnchantment("minecraft:fortune"))
+    );
+
+    /**
+     * Second loot entry with a condition. Will drop if the player has silk touch.
+     */
+    const appleWhenEfficiency = LootEntry.of("minecraft:apple").when((c) =>
+        c.matchMainHand(ItemFilter.hasEnchantment("minecraft:efficiency"))
+    );
+
+    /**
+     * Simple item without conditions or anything else, will drop
+     */
+    const flint = "minecraft:flint";
+
+    /**
+     * Random chance is 0 so no diamond will ever drop. Just to show, that it will skip all other entries.
+     */
+    const diamondNoDrop = LootEntry.of("minecraft:diamond").when((c) => c.randomChance(0.0));
+
+    /**
+     * No conditions just an item, but this will not drop, because the previous entry failed.
+     */
+    const ironIngot = "minecraft:iron_ingot";
+
+    event
+        .addBlockLootModifier("minecraft:coal_ore")
+        .removeLoot(Ingredient.all)
+        .addSequenceLoot(stickWhenFortune, appleWhenEfficiency, flint, diamondNoDrop, ironIngot);
+});
+Additional Info
+LootContextJS
+Holds information for the current loot drop. Is mostly used for .apply().
+
+getType()
+Returns the loot type.
+
+getPosition()
+getEntity()
+Returns an [EntityJS] or null if no entity exists for the context.
+
+getKillerEntity()
+Returns an [EntityJS] for the killer or null if no entity exists for the context.
+
+getPlayer()
+Returns a [PlayerJS] or null if no player exists for the context. An example of null would be when a Skeleton shoots a Creeper.
+
+getDamageSource()
+Returns a [DamageSourceJS] or null if no source exists.
+
+getTool()
+Returns an [ItemStackJS] for the tool. If no tool exists in the context, it will return an empty item.
+
+getDestroyedBlock()
+Returns a [BlockContainerJS] for block loot. Will be null for every other loot type.
+
+isExploded()
+Returns true if the loot drop happens by an explosion.
+
+getExplosionRadius()
+Returns the explosion radius. If isExploded() returns false, the radius is 0.
+
+getLevel()
+Returns the [LevelJS].
+
+getServer()
+Returns the [ServerJS].
+
+getLuck()
+getLooting()
+lootSize()
+addLoot(item)
+removeLoot(ItemFilter)
+findLoot(ItemFilter)
+hasLoot(ItemFilter)
+forEachLoot(callback)
+Iterates over each item and calls the given callback for it.
+
+// callback example
+const callback = (item) => {
+    console.log(item);
+};
+EntityPredicateBuilderJS
+anyType(...types)
+Entity tags can also be passed when using # as a prefix. Example: #skeletons.
+
+isOnFire(flag)
+isCrouching(flag)
+isSprinting(flag)
+isSwimming(flag)
+isBaby(flag)
+isInWater(flag)
+isUnderWater(flag)
+isMonster(flag)
+isCreature(flag)
+isOnGround(flag)
+isUndeadMob(flag)
+isArthropodMob(flag)
+isIllegarMob(flag)
+isWaterMob(flag)
+hasEffect(effect, amplifier) & hasEffect(effect)
+nbt(json)
+matchMount(callback)
+Matching the mount for the current entity. LootJS provides an EntityPredicateBuilderJS for the callback.
+
+LootJS.modifiers((event) => {
+    event
+        .addLootTypeModifier([LootType.ENTITY])
+        .matchEntity((entity) => {
+            entity.anyType("#skeletons");
+            entity.matchMount((mount) => {
+                mount.anyType("minecraft:spider");
+            });
+        })
+        .addLoot("minecraft:magma_cream");
+});
+This example shows a Skeleton riding a Spider, also known as a spider jockey.
+
+matchTargetedEntity(callback)
+Matching the targeted entity for the current entity. LootJS provides a EntityPredicateBuilderJS for the callback.
+
+matchSlot(slot, ItemFilter)
+Returns true if the slot contains the specified ItemFilter.
+
+DamageSourcePredicateBuilderJS
+anyType(...types)
+Returns true if at least one type matches. Possible types are: "inFire", "lightningBolt", "onFire", "lava", "hotFloor", "inWall", "cramming", "drown", "starve", "cactus", "fall", "flyIntoWall", "outOfWorld", "generic", "magic", "wither", "anvil", "fallingBlock", "dragonBreath", "dryout", "sweetBerryBush" and there might be more types added by other mods.
+
+isProjectile(flag)
+isExplosion(flag)
+doesBypassArmor(flag)
+doesBypassInvulnerability(flag)
+doesBypassMagic(flag)
+isFire(flag)
+isMagic(flag)
+isLightning(flag)
+matchDirectEntity(callback)
+Matching the direct entity. LootJS provides a EntityPredicateBuilderJS for the callback.
+
+matchSourceEntity(callback)
+Matching the source entity. LootJS provides a EntityPredicateBuilderJS for the callback.
+
+ItemFilters
+ItemFilters can be used as filters for different functions in LootJS. Though everywhere where ItemFilter is needed, you can also use the KubeJS methods Item.of() and Ingredient.of().
+
+ItemFilter additionally supports these quick filters:
+
+ItemFilter.ALWAYS_FALSE
+ItemFilter.ALWAYS_TRUE
+ItemFilter.SWORD
+ItemFilter.PICKAXE
+ItemFilter.AXE
+ItemFilter.SHOVEL
+ItemFilter.HOE
+ItemFilter.TOOL
+ItemFilter.POTION;
+ItemFilter.HAS_TIER;
+ItemFilter.PROJECTILE_WEAPON
+ItemFilter.ARMOR;
+ItemFilter.WEAPON;
+Matches all swords, tools, trident and projectile weapons
+ItemFilter.HEAD_ARMOR
+ItemFilter.CHEST_ARMOR
+ItemFilter.LEGS_ARMOR
+ItemFilter.FEET_ARMOR
+ItemFilter.FOOD
+ItemFilter.DAMAGEABLE
+ItemFilter.DAMAGED
+ItemFilter.ENCHANTABLE
+ItemFilter.ENCHANTED
+ItemFilter.BLOCK
+Matches if the item can be placed as block
+ItemFilter.hasEnchantment(enchantment, minLevel, maxLevel) & ItemFilter.hasEnchantment(enchantment)
+Check if an item has an enchantment
+On Forge only you can also use:
+
+ForgeItemFilter.canPerformAnyAction(...action)
+ForgeItemFilter.canPerformAction(...action)
+Existing default actions on Forge: "axe_dig", "pickaxe_dig", "shovel_dig", "hoe_dig", "sword_dig", "shears_dig", "axe_strip", "axe_scrape", "axe_wax_off", "shovel_flatten", "sword_sweep", "shears_harvest", "shears_carve", "shears_disarm", "till", "shield_block", "fishing_rod_cast". Mods can add their own actions.
+NumberProvider
+NumberProvider is a vanilla object which gets type wrapped by KubeJS. If a function takes a number provider, you can pass a simple number to use a constant value, an array with a min and a max value [min, max] -> [3, 10] or if you want to have a binomial distribution, you can use { n: a, p: b} -> { n: 3, p: 0.5 }.
+
+Pages 6
+Find a page or section…
+Home
+1.16.5
+1.18.2
+1.19.2
+1.20.1
+Event Overview
+addBlockLootModifier
+addEntityLootModifier
+addLootTableModifier
+addLootTypeModifier
+Existing loot types
+Disable wither nether star drop and mob head drops
+enableLogging()
+getGlobalModifiers() FORGE ONLY
+removeGlobalModifier FORGE ONLY
+disableLootModification FORGE ONLY
+Actions
+addLoot
+addAlternativesLoot
+addSequenceLoot
+addWeightedLoot
+removeLoot
+replaceLoot
+modifyLoot
+triggerExplosion
+triggerLightningStrike
+dropExperience
+pool
+playerAction
+apply callback
+Conditions
+matchLoot
+matchMainHand
+matchOffHand
+matchEquip
+survivesExplosion
+timeCheck
+weatherCheck
+randomChance
+randomChanceWithLooting
+randomChanceWithEnchantment
+biome
+anyBiome
+anyDimension
+anyStructure
+lightLevel
+killedByPlayer
+matchEntity(
+matchDirectKiller
+matchKiller
+matchPlayer
+matchDamageSource
+distanceToKiller
+hasAnyStage
+playerPredicate
+entityPredicate
+killerPredicate
+directKillerPredicate
+not
+or
+and
+customCondition
+Functions
+enchantRandomly
+enchantWithLevels
+applyLootingBonus
+applyBinomialDistributionBonus
+applyOreBonus
+applyBonus
+simulateExplosionDecay
+smeltLoot
+damage
+addPotion
+limitCount
+addAttributes
+addLore
+replaceLore
+setName
+addNBT or addNbt
+functions
+customFunction
+LootEntry
+Create a LootEntry
+Modify the LootEntry
+Apply conditions
+Example usage
+Default addLoot action
+Using addAlternativesLoot action
+Using addSequenceLoot action
+Additional Info
+LootContextJS
+getType()
+getPosition()
+getEntity()
+getKillerEntity()
+getPlayer()
+getDamageSource()
+getTool()
+getDestroyedBlock()
+isExploded()
+getExplosionRadius()
+getLevel()
+getServer()
+getLuck()
+getLooting()
+lootSize()
+addLoot(item)
+removeLoot(ItemFilter)
+findLoot(ItemFilter)
+hasLoot(ItemFilter)
+forEachLoot(callback)
+EntityPredicateBuilderJS
+anyType(...types)
+isOnFire(flag)
+isCrouching(flag)
+isSprinting(flag)
+isSwimming(flag)
+isBaby(flag)
+isInWater(flag)
+isUnderWater(flag)
+isMonster(flag)
+isCreature(flag)
+isOnGround(flag)
+isUndeadMob(flag)
+isArthropodMob(flag)
+isIllegarMob(flag)
+isWaterMob(flag)
+hasEffect(effect, amplifier) & hasEffect(effect)
+nbt(json)
+matchMount(callback)
+matchTargetedEntity(callback)
+matchSlot(slot, ItemFilter)
+DamageSourcePredicateBuilderJS
+anyType(...types)
+isProjectile(flag)
+isExplosion(flag)
+doesBypassArmor(flag)
+doesBypassInvulnerability(flag)
+doesBypassMagic(flag)
+isFire(flag)
+isMagic(flag)
+isLightning(flag)
+matchDirectEntity(callback)
+matchSourceEntity(callback)
+ItemFilters
+NumberProvider
+1.21
+Clone this wiki locally
+https://github.com/AlmostReliable/lootjs.wiki.git
+Footer

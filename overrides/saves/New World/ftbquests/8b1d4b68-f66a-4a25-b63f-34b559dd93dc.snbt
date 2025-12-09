@@ -1,0 +1,17 @@
+{
+	version: 1
+	uuid: "8b1d4b68f66a4a25b63f34b559dd93dc"
+	name: "White_Crow2#8b1d4b68"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: {
+		0000000000000001: 1765306647274L
+	}
+	completed: {
+		0000000000000000: 1765306831264L
+		0000000000000001: 1765306831264L
+	}
+	claimed_rewards: { }
+	player_data: { }
+}

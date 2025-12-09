@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 4,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_pickaxe",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:duranium_pickaxe",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tritanium_pickaxe",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:hsse_pickaxe",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_axe",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:duranium_axe",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_sword",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:duranium_sword",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:manyullyn\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pick_head",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:manyullyn\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

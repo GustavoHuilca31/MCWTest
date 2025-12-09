@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 4,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:luv_machine_hull",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:zpm_machine_hull",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:ultimate_catalyst",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:crystaltine_catalyst",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bedrock",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

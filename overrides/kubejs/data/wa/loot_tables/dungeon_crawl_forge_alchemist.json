@@ -1,0 +1,121 @@
+
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:steel_plate",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:black_steel_ingot",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_machine_hull",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:silver_single_wire",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:copper_wire",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:fiery_crystal\",\"sakuratinker:fiery_crystal\",\"sakuratinker:fiery_crystal\"],tic_modifiers:[{level:3,name:\"sakuratinker:armor_twilight_remembrance\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":8.0f,\"tconstruct:armor_toughness\":6.0f,\"tconstruct:durability\":2400.0f,\"tconstruct:knockback_resistance\":0.2f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:gold\",\"tconstruct:gold\",\"tconstruct:gold\"],tic_modifiers:[{level:3,name:\"tconstruct:golden\"},{level:3,name:\"tconstruct:magic_protection\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":210.0f},tic_volatile_data:{\"tconstruct:piglin_neutral\":1b,upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:rose_gold\",\"tconstruct:rose_gold\",\"tconstruct:rose_gold\"],tic_modifiers:[{level:3,name:\"tconstruct:enhanced\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":270.0f},tic_volatile_data:{upgrades:4}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:orichalcum\",\"sakuratinker:orichalcum\",\"sakuratinker:orichalcum\"],tic_modifiers:[{level:3,name:\"sakuratinker:shielding\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":7.7999997f,\"tconstruct:armor_toughness\":6.3f,\"tconstruct:durability\":2100.0f,\"tconstruct:knockback_resistance\":0.2f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"twilight_construct:ironwood\",\"twilight_construct:ironwood\",\"twilight_construct:ironwood\"],tic_modifiers:[{level:3,name:\"twilight_construct:mystic_growth\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":10.0f,\"tconstruct:durability\":600.0f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:invar\",\"tconstruct:invar\",\"tconstruct:invar\"],tic_modifiers:[{level:3,name:\"tconstruct:invariant\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":720.0f,\"tconstruct:knockback_resistance\":0.2f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:yoyo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"gm_construct:aluminium\",\"gm_construct:aluminium\",\"tconstruct:wood\",\"tconstruct:string\",\"tconstruct:wood\"],tic_modifiers:[{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:stringy\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.45f,\"tconstruct:durability\":1.2f},tic_persistent:{},tic_stats:{\"sakuratinker:attack_interval\":40.0f,\"sakuratinker:length\":8.0f,\"sakuratinker:time\":61.0f,\"sakuratinker:weight\":1.5f,\"tconstruct:attack_damage\":6.975f,\"tconstruct:attack_speed\":0.8f,\"tconstruct:durability\":1843.2001f,\"tconstruct:harvest_tier\":\"minecraft:iron\",\"tconstruct:mining_speed\":12.0f},tic_volatile_data:{abilities:1,upgrades:2}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

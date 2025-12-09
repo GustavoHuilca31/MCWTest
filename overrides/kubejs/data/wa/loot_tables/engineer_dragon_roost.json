@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 7,
+        "max": 12
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "extendedcrafting:handheld_table",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:stainless_steel_plate",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 4,
+                    "max": 12
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:hhuozhijinghua",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:pump_deck",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 5,
+                    "max": 8
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "bhc:red_heart",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "dungeonsdelight:sculk_tart_slice",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:scorched_anvil",
+            "weight": 1
+            },
+            {
+            "type": "minecraft:item",
+            "name": "dungeonsdelight:brined_flesh",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "xlfoodmod:healthy_energy_drink",
+            "weight": 6
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:hp_steam_solar_boiler",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lp_steam_solar_boiler",
+            "weight": 3
+            }
+        ]
+        }
+    ]
+}

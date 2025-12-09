@@ -1,0 +1,25 @@
+
+["seed drops"]
+	#Enable lemon seed drop
+	lemonSeed = true
+	#Enable tomato seed drop
+	tomatoSeed = true
+	#Enable strawberry seed drop
+	strawberrySeed = true
+	#Enable cucumber seed drop
+	cucumberSeed = true
+	#Enable corn seed drop
+	cornSeed = true
+	#Enable lettuce seed drop
+	lettuceSeed = true
+	#Enable onion drop
+	onion = true
+	#Enable pepper seed drop
+	pepperSeed = true
+	#Enable pineapple seed drop
+	pineappleSeed = true
+	#Enable rice drop
+	rice = true
+	#Enable vanilla flower drop
+	vanillaFlower = true
+

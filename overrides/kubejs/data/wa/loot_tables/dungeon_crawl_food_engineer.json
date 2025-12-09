@@ -1,0 +1,115 @@
+
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:turnip",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:pineapple",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:tomato",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:grapefruit",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:banana",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:veggie_salad",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:strawberry_smoothie",
+          "weight": 1,
+        "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:saguaro_juice",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:peanut_butter_and_jam",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:grilled_cheese",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:pork_and_beans",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:almond",
+          "weight": 2,
+            "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:mango",
+          "weight": 2,
+            "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:basil",
+          "weight": 2,
+            "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:crab",
+          "weight": 2,
+            "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:tuna",
+          "weight": 2,
+            "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:cooked_shrimp",
+          "weight": 2,
+            "quality": 2
+        }
+      ]
+    }
+  ]
+}

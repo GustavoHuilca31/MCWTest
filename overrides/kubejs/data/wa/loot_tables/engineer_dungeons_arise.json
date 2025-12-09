@@ -1,0 +1,125 @@
+{
+    "type": "minecraft:chest",
+
+    "pools": [
+        {
+        "rolls": {
+        "min": 4,
+        "max": 7
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:bronze_drum",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_machine_hull",
+            "weight": 6
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:heatproof_machine_casing",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:coke_oven_bricks",
+            "weight": 7,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 3,
+                    "max": 6
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:firebricks",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:wood_wall",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 4,
+                    "max": 8
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:hp_steam_solid_boiler",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:hp_steam_solar_boiler",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "ironchest:gold_chest",
+            "weight": 1
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_alloy_smelter",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_autoclave",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_bender",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_brewery",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_canner",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_centrifuge",
+            "weight": 4
+            }
+        ]
+        }
+    ]
+}

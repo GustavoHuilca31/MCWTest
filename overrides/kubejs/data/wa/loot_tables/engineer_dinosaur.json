@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 15,
+        "max": 20
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:elegantmagic",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:nichrome_coil_block",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:stainless_steel_plate",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 4,
+                    "max": 12
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:aluminium_plate",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 6,
+                    "max": 15
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:kanthal_coil_block",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 6
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "mysticalagradditions:inferium_apple",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 1,
+                    "max": 3
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:jjingzhi_4",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:phosphorus_boule",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "miniutilities:wooden_spikes",
+            "weight": 3
+            }
+        ]
+        }
+    ]
+}

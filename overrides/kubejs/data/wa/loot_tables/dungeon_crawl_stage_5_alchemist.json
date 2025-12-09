@@ -1,0 +1,138 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 8,
+        "max": 15
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:ev_machine_hull",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:iv_machine_hull",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:luv_machine_hull",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tungsten_steel_ingot",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:rhodium_plated_palladium_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:naquadah_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:elite_catalyst",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:epic_catalyst",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:ender_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 2,
+          "quality": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:silverfish_and_chips",
+          "weight": 2,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:ossobuco_block",
+          "weight": 1,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:pumpkin_spice_latte",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:chocolate_milkshake",
+          "weight": 2,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}

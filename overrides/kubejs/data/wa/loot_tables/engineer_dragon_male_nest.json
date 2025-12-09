@@ -1,0 +1,158 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 15,
+        "max": 20
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:elegantmagic",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:nichrome_coil_block",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:stainless_steel_plate",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 4,
+                    "max": 12
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:aluminium_plate",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 6,
+                    "max": 15
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:kanthal_coil_block",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtca:adamantium_quadruple_fluid_pipe",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "iceandfire:fire_dragon_heart",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtca:scrapbox",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "nutritionalbalance:lunchbox",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:travelers_helmet",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:dragon_fire_steel\",\"tconstruct:leather\"],tic_modifiers:[{level:1,name:\"tconstruct:tanned\"},{level:1,name:\"sakuratinker:breath_resistance\"},{level:1,name:\"sakuratinker:fire_immunity\"},{level:2,name:\"sakuratinker:dragon_soul\"}],tic_multipliers:{\"tconstruct:durability\":0.75f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":9.0f,\"tconstruct:armor_toughness\":5.5f,\"tconstruct:durability\":1650.0f,\"tconstruct:knockback_resistance\":0.0375f},tic_volatile_data:{abilities:1,defense:2,upgrades:2}}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:travelers_helmet",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:dragon_ice_steel\",\"tconstruct:leather\"],tic_modifiers:[{level:1,name:\"tconstruct:tanned\"},{level:1,name:\"sakuratinker:breath_resistance\"},{level:1,name:\"sakuratinker:ice_immunity\"},{level:2,name:\"sakuratinker:dragon_soul\"}],tic_multipliers:{\"tconstruct:durability\":0.75f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":9.0f,\"tconstruct:armor_toughness\":5.5f,\"tconstruct:durability\":1650.0f,\"tconstruct:knockback_resistance\":0.0375f},tic_volatile_data:{abilities:1,defense:2,upgrades:2}}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:travelers_helmet",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"sakuratinker:dragon_lightning_steel\",\"tconstruct:leather\"],tic_modifiers:[{level:1,name:\"tconstruct:tanned\"},{level:1,name:\"sakuratinker:breath_resistance\"},{level:1,name:\"sakuratinker:lightning_immunity\"},{level:2,name:\"sakuratinker:dragon_soul\"}],tic_multipliers:{\"tconstruct:durability\":0.75f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":9.0f,\"tconstruct:armor_toughness\":5.5f,\"tconstruct:durability\":1650.0f,\"tconstruct:knockback_resistance\":0.0375f},tic_volatile_data:{abilities:1,defense:2,upgrades:2}}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:travelers_helmet",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tcintegrations:dragonsteel_lightning\",\"tconstruct:leather\"],tic_modifiers:[{level:1,name:\"tconstruct:tanned\"},{level:1,name:\"tconstruct:ductile\"},{level:1,name:\"tcintegrations:dragonscales\"}],tic_multipliers:{\"tconstruct:durability\":0.75f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":5.25f,\"tconstruct:armor_toughness\":4.0f,\"tconstruct:durability\":408.37503f,\"tconstruct:projectile_damage\":2.1f},tic_volatile_data:{abilities:1,defense:2,upgrades:2}}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "sakuratinker:yoyo",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tinkers_ingenuity:black_dragon_substance\",\"tinkers_ingenuity:black_dragon_substance\",\"tconstruct:wood\",\"tconstruct:string\",\"tconstruct:wood\"],tic_modifiers:[{level:2,name:\"tinkers_ingenuity:alien\"},{level:2,name:\"tinkers_ingenuity:black_wings\"},{level:2,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:stringy\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.45f,\"tconstruct:durability\":1.2f},tic_persistent:{\"tinkers_ingenuity:alien_stat_bonus1\":8,\"tinkers_ingenuity:alien_stat_bonus2\":6,\"tinkers_ingenuity:alien_stat_bonus3\":9},tic_stats:{\"sakuratinker:attack_interval\":40.0f,\"sakuratinker:length\":8.0f,\"sakuratinker:time\":61.0f,\"sakuratinker:weight\":1.5f,\"tconstruct:attack_damage\":3.375f,\"tconstruct:attack_speed\":0.8f,\"tconstruct:durability\":1860.0001f,\"tconstruct:harvest_tier\":\"minecraft:netherite\",\"tconstruct:mining_speed\":15.0f},tic_volatile_data:{abilities:1,upgrades:2}}"
+                }
+            ]
+            }
+        ]
+        }
+    ]
+}

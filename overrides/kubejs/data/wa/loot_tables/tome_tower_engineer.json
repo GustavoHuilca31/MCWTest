@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 12,
+        "max": 25
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:steel_plate",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:black_steel_ingot",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_machine_hull",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:fried_chicken",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:lemon_chicken",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:taco",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

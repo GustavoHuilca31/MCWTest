@@ -1,0 +1,25 @@
+{
+  "config": {
+    "canInteract": true,
+    "onlyProtectOriginalBlocks": false,
+    "allowExplosions": true,
+    "preventPassiveSpawns": false,
+    "allowItemPickup": true,
+    "preventHostileSpawns": false,
+    "allowFireSpread": true,
+    "interactionBlacklist": [],
+    "canBreakBlocks": true,
+    "itemUseWhitelist": [],
+    "allowPlayerPVP": true,
+    "itemUseBlacklist": [],
+    "canPlaceBlocks": true,
+    "allowRiptide": true,
+    "interactionWhitelist": [],
+    "allowElytraFlight": true,
+    "allowEnderTeleportation": true,
+    "allowCreatureSpawning": true,
+    "allowEnderPearls": true,
+    "allowCreativeFlight": true
+  },
+  "note": "Configuration for structure behavior modification"
+}

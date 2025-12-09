@@ -1,0 +1,42 @@
+[
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 1,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": -60,
+      "maxheight": 250,
+      "maxthis": 200,
+      "and":{
+          "mintime": 13000,
+          "maxtime": 23000,
+          "maxlight": 12
+      }
+    }
+  },
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 2,
+    "attempts": 20,
+    "amount": {
+      "minimum": 5,
+      "maximum": 10
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 25,
+      "maxdist": 100,
+      "maxheight": -60,
+      "minheight": -125,
+      "maxthis": 300
+    }
+  }
+  
+]

@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 15,
+        "max": 20
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:mv_circuit_assembler",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:lv_circuit_assembler",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:basic_integrated_circuit",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:cpu_wafer",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 1,
+                    "max": 3
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "mysticalagriculture:infusion_altar",
+            "weight": 1
+            },
+            {
+            "type": "minecraft:item",
+            "name": "waystone:waystone",
+            "weight": 2
+            }
+        ]
+        }
+    ]
+}

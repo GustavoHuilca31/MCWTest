@@ -1,0 +1,122 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "caneswonderfulspidersoverhaul:jumping_spider_leg",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "caneswonderfulspidersoverhaul:spider_silk",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            ]
+        },
+        {
+           "type": "minecraft:item",
+            "name": "tconstruct:slime_helmet",
+            "weight": 1,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:string\"],tic_modifiers:[{level:1,name:\"tconstruct:boon_of_sssss\"},{level:1,name:\"tconstruct:spider_disguise\"},{level:1,name:\"tconstruct:overslime_friend\"}],tic_persistent:{},tic_stats:{\"tconstruct:durability\":502.0f},tic_volatile_data:{abilities:1,upgrades:5}}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "mysticalagricultur:spider_essence",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "tconstruct:cave_spider_head",
+            "weight": 3
+        },
+        {
+            "type": "minecraft:item",
+            "name": "travelersbackpack:spider",
+            "weight": 1,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{RenderInfo:{},StorageSlots:27,Tier:0,ToolSlots:2,UpgradeSlots:2}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "dungeonsdelight:spider_donut",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "gtceu:prospector.lv",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Charge:100000L}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "gtceu:sticky_resin",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 6
+                }
+              }
+            ]
+        }
+        ]
+    }
+    ]
+    
+}

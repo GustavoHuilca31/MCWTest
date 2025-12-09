@@ -1,0 +1,104 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"tconstruct:copper\",\"tconstruct:copper\"],tic_modifiers:[{level:3,name:\"tconstruct:depth_protection\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":416.0f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"twilight_construct:red_thread\",\"tconstruct:copper\"],tic_modifiers:[{level:2,name:\"tconstruct:depth_protection\"},{level:1,name:\"twilight_construct:red_marker\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":416.0f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"tinkers_thinking:paper\",\"tconstruct:copper\"],tic_modifiers:[{level:2,name:\"tconstruct:depth_protection\"},{level:1,name:\"tinkers_thinking:soft\"},{level:2,name:\"tconstruct:writable\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":312.0f},tic_volatile_data:{upgrades:3}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"tconstruct:leather\",\"tconstruct:copper\"],tic_modifiers:[{level:1,name:\"tconstruct:tanned\"},{level:2,name:\"tconstruct:depth_protection\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":416.0f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:copper\",\"tconstruct:vine\",\"tconstruct:copper\"],tic_modifiers:[{level:1,name:\"tconstruct:solar_powered\"},{level: 2,name:\"tconstruct:depth_protection\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":6.0f,\"tconstruct:durability\":416.0f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sakuratinker:embedded_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:lead\",\"tconstruct:lead\",\"tconstruct:lead\"],tic_modifiers:[{level:3,name:\"tconstruct:heavy\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":8.0f,\"tconstruct:durability\":384.0f,\"tconstruct:knockback_resistance\":0.55f,\"tconstruct:projectile_damage\":2.6f},tic_volatile_data:{upgrades:1}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:steel_plate",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:black_steel_ingot",
+          "weight": 2,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:lv_machine_hull",
+          "weight": 1,
+          "quality": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:silver_single_wire",
+          "weight": 2,
+          "quality": 2
+        }
+
+      ]
+    }
+  ]
+}

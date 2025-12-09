@@ -1,0 +1,15 @@
+#Horizontal search radius for finding loot containers (in blocks)
+#Range: 1 ~ 256
+search_radius_horizontal = 32
+#Vertical search radius for finding loot containers (in blocks)
+#Range: 1 ~ 64
+search_radius_vertical = 16
+#Enable the ability to make loot containers glow when right-clicking with the compass
+enable_loot_container_glow = true
+#Cooldown for the glow feature in ticks (20 ticks = 1 second)
+#Range: 0 ~ 1200
+glow_cooldown = 300
+#Duration for how long loot containers should glow in seconds
+#Range: 1 ~ 60
+glow_duration = 5
+

@@ -1,0 +1,161 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 8,
+        "max": 15
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:zpm_machine_hull",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:uv_machine_hull",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:uhv_machine_hull",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_ingot",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:neutronium_dust",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:the_ultimate_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:crystaltine_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "extendedcrafting:ender_ingot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 4,
+          "quality": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "weight": 1,
+          "quality": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_head",
+          "weight": 1,
+          "quality": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:phantom_soup",
+          "weight": 3,
+          "quality": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:warden_steak",
+          "weight": 1,
+          "quality": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dungeonsdelight:warden_heart_soup",
+          "weight": 1,
+          "quality": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:supreme_pizza",
+          "weight": 3,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:the_big_breakfast",
+          "weight": 2,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:beef_wellington",
+          "weight": 2,
+          "quality": 4
+        }
+      ]
+    }
+  ]
+}

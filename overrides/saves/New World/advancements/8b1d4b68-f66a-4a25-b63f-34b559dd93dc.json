@@ -1,0 +1,486 @@
+{
+  "infinity_cave:mechanics/weapons/sonic_bow/tick": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "stellarity:cursed_tome/root": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "travelersbackpack:root": {
+    "criteria": {
+      "tick": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/root": {
+    "criteria": {
+      "tick": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "stellarity:dragons_den/cursed_tome/root": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:mechanics/altar/tick": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:load": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "the_deep_void:the_deep_void_advancement": {
+    "criteria": {
+      "the_deep_void_advancement_0": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:mechanics/weapons/torpedo_harpoon/tick": {
+    "criteria": {
+      "requirement": "2025-12-09 13:49:16 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:root": {
+    "criteria": {
+      "always_true": "2025-12-09 13:50:25 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:river": "2025-12-09 13:56:07 -0500",
+      "minecraft:forest": "2025-12-09 13:50:25 -0500",
+      "minecraft:old_growth_birch_forest": "2025-12-09 13:51:38 -0500",
+      "minecraft:plains": "2025-12-09 14:00:03 -0500"
+    },
+    "done": false
+  },
+  "infinity_cave:technical/armor/leggings": {
+    "criteria": {
+      "empty": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/magnet_card": {
+    "criteria": {
+      "has_wct": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/upgrade_pattern_access": {
+    "criteria": {
+      "has_wit": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "solcarrot:recipes/food_book": {
+    "criteria": {
+      "has_book": "2025-12-09 13:51:38 -0500",
+      "has_carrot": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/upgrade_pattern_encoding": {
+    "criteria": {
+      "has_wpt": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/ce": {
+    "criteria": {
+      "has_wpt": "2025-12-09 13:51:38 -0500",
+      "has_wct": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/ca": {
+    "criteria": {
+      "has_wit": "2025-12-09 13:51:38 -0500",
+      "has_wct": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/upgrade_crafting": {
+    "criteria": {
+      "has_wct": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_universal_terminal/ae": {
+    "criteria": {
+      "has_wit": "2025-12-09 13:51:38 -0500",
+      "has_wpt": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:technical/armor/helmet": {
+    "criteria": {
+      "empty": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_pattern_access_terminal": {
+    "criteria": {
+      "has_wt": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:technical/armor/boots": {
+    "criteria": {
+      "empty": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:recipes/generic/the_acknowledgment": {
+    "criteria": {
+      "has_iron_ingot": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "croptopia:recipes/flour": {
+    "criteria": {
+      "has_grain": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/pie_crust": {
+    "criteria": {
+      "has_wheat": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/quantum_bridge_card": {
+    "criteria": {
+      "has_wit": "2025-12-09 13:51:38 -0500",
+      "has_wpt": "2025-12-09 13:51:38 -0500",
+      "has_wct": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/hay": {
+    "criteria": {
+      "has_wheat": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipes/wireless_pattern_encoding_terminal": {
+    "criteria": {
+      "has_wt": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "croptopia:recipes/documentation": {
+    "criteria": {
+      "has_crop": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:technical/armor/chestplate": {
+    "criteria": {
+      "empty": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "dungeonsdelight:main/root": {
+    "criteria": {
+      "seeds": "2025-12-09 13:51:38 -0500"
+    },
+    "done": true
+  },
+  "enigmaticlegacy:recipes/generic/the_twist": {
+    "criteria": {
+      "has_parent_recipe": "2025-12-09 13:51:38 -0500"
+    },
+    "done": false
+  },
+  "croptopia:gather_forest": {
+    "criteria": {
+      "tomatillo_seed": "2025-12-09 13:51:47 -0500"
+    },
+    "done": false
+  },
+  "croptopia:gather_all": {
+    "criteria": {
+      "tomatillo_seed": "2025-12-09 13:51:47 -0500"
+    },
+    "done": false
+  },
+  "croptopia:getseeds": {
+    "criteria": {
+      "has_seeds": "2025-12-09 13:51:47 -0500"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-12-09 13:52:58 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:sticks_and_stones": {
+    "criteria": {
+      "has_rock_stone": "2025-12-09 13:53:02 -0500"
+    },
+    "done": false
+  },
+  "survivalistessentials:recipes/misc/book_from_dirt": {
+    "criteria": {
+      "has_loose_rock": "2025-12-09 13:53:02 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/building_blocks/cobblestone_from_rocks": {
+    "criteria": {
+      "has_loose_rock": "2025-12-09 13:53:02 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/tools/crude_hatchet": {
+    "criteria": {
+      "has_loose_rock": "2025-12-09 13:53:02 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/twilight_oak_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/time_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/mining_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/transformation_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/canopy_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/dark_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "dungeonsdelight:recipes/transportation/wormwood_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/sorting_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-12-09 13:56:05 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:flint_shard": {
+    "criteria": {
+      "has_flint_shard": "2025-12-09 13:56:08 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/decorations/flint_from_shards": {
+    "criteria": {
+      "has_flint_shard": "2025-12-09 13:56:08 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/tools/crude_knife": {
+    "criteria": {
+      "has_flint_shard": "2025-12-09 13:56:08 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:crude_knife": {
+    "criteria": {
+      "has_knife": "2025-12-09 13:59:39 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/misc/flint_shard": {
+    "criteria": {
+      "has_crude_knife": "2025-12-09 13:59:39 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/tools/crude_saw": {
+    "criteria": {
+      "has_the_recipe": "2025-12-09 13:59:39 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/misc/plant_paste": {
+    "criteria": {
+      "has_plant_fiber": "2025-12-09 13:59:41 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-12-09 13:59:41 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/misc/plant_string": {
+    "criteria": {
+      "has_plant_fiber": "2025-12-09 13:59:41 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:recipes/tools/mortar_and_pestle": {
+    "criteria": {
+      "has_plant_fiber": "2025-12-09 13:59:41 -0500"
+    },
+    "done": true
+  },
+  "survivalistessentials:crude_saw": {
+    "criteria": {
+      "has_saw": "2025-12-09 14:14:36 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-12-09 14:17:59 -0500"
+    },
+    "done": true
+  },
+  "infinity_cave:technical/hit_match/entity_hurt_player": {
+    "criteria": {
+      "requirement": "2025-12-09 14:42:08 -0500"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

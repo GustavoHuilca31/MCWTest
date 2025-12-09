@@ -1,0 +1,108 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 3,
+        "max": 5
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:matong",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",      
+            "name": "elegant_countryside:sshuijingduzuo",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:sticky_resin",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:resin_printed_circuit_board",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 1,
+                    "max": 3
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "dungeonsdelight:bug_chop",
+            "weight": 7,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 3,
+                    "max": 6
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:epoxy_plate",
+            "weight": 5,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 4
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "twilightdelight:cooked_insect",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 2,
+                    "max": 5
+                }
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "gtceu:resin_circuit_board",
+            "weight": 4,
+            "functions": [
+                {
+                "function": "minecraft:set_count",
+                "count": {
+                    "min": 1,
+                    "max": 2
+                }
+                }
+            ]
+            }
+        ]
+    }
+    ]
+    
+}

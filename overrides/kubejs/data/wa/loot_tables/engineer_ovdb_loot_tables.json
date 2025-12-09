@@ -1,0 +1,150 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elegant_countryside:shehuadengpao",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "elegant_countryside:ccheshiju",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "travelersbackpack:standard",
+            "weight": 1,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{RenderInfo:{},StorageSlots:27,Tier:0,ToolSlots:2,UpgradeSlots:2}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "xlfoodmod:strong_energy_drink",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "xlfoodmod:beer",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "xlfoodmod:flesh",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "enigmaticlegacy:enigmatic_amulet",
+            "weight": 1,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{AssignedColor:0.1f}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "enigmaticlegacy:iron_ring",
+            "weight": 2
+        },
+        {
+            "type": "minecraft:item",
+            "name": "gtceu:small_steel_gear",
+            "weight": 6,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "gtceu:prospector.lv",
+            "weight": 2,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Charge:100000L}"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:item",
+            "name": "gtceu:sticky_resin",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 6
+                }
+              }
+            ]
+        }
+        ]
+    }
+    ]
+    
+}

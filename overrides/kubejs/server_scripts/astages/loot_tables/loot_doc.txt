@@ -1,0 +1,72 @@
+Loot Restriction in AStages allow you to control the appearance of specific items in loot tables and mob drops. With this feature, you can prevent certain items from being obtained through chests or defeated entities until the appropriate stage is unlocked.
+
+Methods
+Method	Description	Parameters	Returns
+AStages.addRestrictionForLoot(id, stage)	Create and add generic loot restriction.	id: arbitrary string used as identifier.
+stage: progression stage.	ALootRestriction
+Examples
+Warning
+
+Loot restriction work differently from other restriction types!
+
+Basic Usage
+// Server Script Folder -> file.js (arbitrary file name).
+AStages.addRestrictionForLoot('astages/loot', 'stage_loot') // This line instantiate a loot restriction but DOESN'T do anything itself.
+Properties
+Note
+
+You don't need to set all properties for each restriction: changes should be done only when you want to modify default values!
+
+// Server Script Folder -> file.js (arbitrary file name).
+AStages.addRestrictionForLoot('astages/loot', 'stage_loot')
+    .applyForEveryLootTableAndDrop(false) // If true, apply this restriction to ALL loot tables and mob drops.
+    .restrictForEntities('zombie', 'skeleton', 'blaze') // Apply this restriction to ONLY these mobs, if the value applyForEveryLootTableAndDrop is set to true, this one is ignored!
+    .restrictForLootTables('minecraft:chests/simple_dungeon') // Apply this restriction to ONLY these loot tables, if the value applyForEveryLootTableAndDrop is set to true, this one is ignored!
+    .restrictItems('rotten_flesh', 'bone')
+    .restrictTags('forge:heads')
+    .restrictMods('minecraft', 'astages')
+    .ignoredItems('skeleton_skull')
+    .ignoredTags('forge:rods')
+    .setEntityFilter('partial') // Can be 'partial' or 'all': if set to 'all', all mob drops will be removed! (Ignore restrictItems, restrictTags, and so on... methods).
+    .setLootTableFilter('partial') // Can be 'partial' or 'all': if set to 'all', all loot tables items will be removed! (Ignore restrictItems, restrictTags, and so on... methods).
+Custom Replacer
+Note
+
+You need to know at least the basics of Java (Minecraft) and JavaScript (KubeJS) to understand how this method works!
+
+The method setReplacer is used to add another layer of customisation to loot restrictions! When an item is removed from a loot table or mob drop, it is replaced with an empty stack (Item.empty), but with this method you can choose whatever you want!
+
+The example below shows how to replace all rotten flashes with 10 blocks of emerald, managing anything else with normal behaviour.
+
+// Server Script Folder -> file.js (arbitrary file name).
+AStages.addRestrictionForLoot('astages/loot', 'stage_loot')
+    // some properties here
+    .setReplacer(stack => { // This is the original stack.
+        if (stack.is('rotten_flesh')) { // Replace ONLY this type of stack, so you MUST check it!
+            return Item.of('emerald_block', 10) // Replace the original stack with a brand new one!
+        }
+
+        return Item.empty // Default result for anything else.
+    })
+Association
+Caution
+
+AItemPredicateRestriction item restriction type is NOT supported!
+
+Warning
+
+It's highly recommended to use this methods before setting any property!
+
+A fantastic way to integrate loot restrictions with item and mob restrictions is through association. It's not a complex concept: simply it adds two new methods to item and mob restrictions, associateLootRestriction() and associateLootRestriction(custom_id), to instantiate a new loot restriction from the properties already set up in the current item or mob restriction.
+
+You MUST use only one of the two methods described above!
+
+// Server Script Folder -> file.js (arbitrary file name).
+AStages.addRestrictionForItem('astages/item', 'stage_item', 'oak_log')
+    .associateLootRestriction('custom_id_for_loot_restriction')
+    .associateLootRestriction() // astages/item/loot -> /loot will be added at the end of the current item restriction id
+// Server Script Folder -> file.js (arbitrary file name).
+AStages.addRestrictionForMob('astages/mob', 'stage_mob', 'slime')
+    .associateLootRestriction('custom_id_for_loot_restriction')
+    .associateLootRestriction() // astages/mob/loot -> /loot will be added at the end of the current mob restriction id
+The methods create a brand new loot restriction with custom id (or default one) and the same stage of the item or mob restriction. Going forward, for mob restrictions simply sets the restrictForEntities(...) method to the same entity types locked in the original restriction, and setEntityFilter(...) is set to AFilter.ALL to remove all drops. While, for item restrictions, it depends on the type of restriction: for AItemRestriction it restricts all items; for AItemTagRestriction it restricts all tags and add all ignored items; for AItemModRestriction it restricts all mods, while ignoring items and tags; in particular, for ALL item restrictions association, the method applyForEveryLootTableAndDrop(...) is set to true, meaning that the item will be removed from all loot tables and mob drops.

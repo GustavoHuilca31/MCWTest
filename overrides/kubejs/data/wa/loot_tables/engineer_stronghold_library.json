@@ -1,0 +1,70 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+        "rolls": {
+        "min": 3,
+        "max": 5
+      },
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "travelersbackpack:bookshelf",
+            "weight": 1,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{RenderInfo:{},StorageSlots:27,Tier:0,ToolSlots:2,UpgradeSlots:2}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:materials_and_you",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:puny_smelting",
+            "weight": 5
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:mighty_smelting",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:tinkers_gadgetry",
+            "weight": 4
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:fantastic_foundry",
+            "weight": 3
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:encyclopedia",
+            "weight": 2
+            },
+            {
+            "type": "minecraft:item",
+            "name": "solcarrot:food_book",
+            "weight": 6
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:repair_kit",
+            "weight": 8,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tinkers_thinking:paper\"}"
+                }
+            ]
+            }
+        ]
+        }
+    ]
+}

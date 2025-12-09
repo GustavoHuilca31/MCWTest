@@ -1,0 +1,155 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:salsa",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:strawberry",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:orange",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:lemon",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_salmon",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:fruit_salad",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:cucumber",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:eggplant",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:avocado",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:grape",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:kiwi",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:peach",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "croptopia:pear",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "xlfoodmod:raw_corn",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "xlfoodmod:corn",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "xlfoodmod:lettuce",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "xlfoodmod:tomato",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "xlfoodmod:lemon",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:cabbage",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:tomato",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:onion",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

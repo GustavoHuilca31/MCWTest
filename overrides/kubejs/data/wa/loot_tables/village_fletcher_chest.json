@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:longbow",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:string\"],tic_modifiers:[],tic_stats:{\"tconstruct:accuracy\":0.95f,\"tconstruct:attack_damage\":1.0f,\"tconstruct:attack_speed\":1.0f,\"tconstruct:draw_speed\":1.0f,\"tconstruct:durability\":59.0f,\"tconstruct:velocity\":1.0f}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:crossbow",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:string\"],tic_modifiers:[],tic_stats:{\"tconstruct:accuracy\":1.1f,\"tconstruct:attack_damage\":3.0f,\"tconstruct:attack_speed\":0.8f,\"tconstruct:draw_speed\":1.25f,\"tconstruct:durability\":120.0f,\"tconstruct:projectile\":\"minecraft:arrow\",\"tconstruct:velocity\":3.15f}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pattern",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

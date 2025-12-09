@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:loot_table",
+    "pools": [
+        {
+        "rolls": 1,
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:tool_binding",
+            "weight": 8,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:small_blade",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:pick_head",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:small_axe_head",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            },
+            {
+            "type": "minecraft:item",
+            "name": "tconstruct:adze_head",
+            "weight": 6,
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Material:\"tconstruct:rock\"}"
+                }
+            ]
+            }
+        ]
+        }
+    ]
+}
